@@ -1,16 +1,15 @@
 # news_app
+Simple News Application with Flutter 
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+🚀 Features
+1.Clean Architecture:
+  1.1.Well-structured codebase with a clear separation of concerns.
+  1.2.Divided into Presentation, Domain, and Data layers.
+2.State Management:
+  2.1.Flutter Bloc ensures predictable and testable state transitions.
+  2.2.Decouples UI logic from business logic.
+3.Network Communication:
+  3.1.Retrofit simplifies API calls with a declarative interface. 
+4.Local Persistence:
+  4.1.Floor provides a reactive SQLite database abstraction.
+ 
