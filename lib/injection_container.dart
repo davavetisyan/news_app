@@ -42,11 +42,11 @@ initDependencies() async {
     RemoteArticleBloc(sl<GetArticleUseCase>()),
   );
 
-  sl.registerSingleton<GetSavedArticleUseCase>(sl());
+  sl.registerSingleton<GetSavedArticleUseCase>(GetSavedArticleUseCase(sl()));
 
-  sl.registerSingleton<RemoveArticleUseCase>(sl());
+  sl.registerSingleton<RemoveArticleUseCase>(RemoveArticleUseCase(sl()));
 
-  sl.registerSingleton<SaveArticleUseCase>(sl());
+  sl.registerSingleton<SaveArticleUseCase>(SaveArticleUseCase(sl()));
 
   sl.registerFactory<LocalArticleBloc>(
       () => LocalArticleBloc(sl(), sl(), sl()));

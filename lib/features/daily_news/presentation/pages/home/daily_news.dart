@@ -1,9 +1,7 @@
-import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:news_app/features/daily_news/domain/entities/article.dart';
 import 'package:news_app/features/daily_news/presentation/bloc/article/remote/remote_article_bloc.dart';
 import 'package:news_app/features/daily_news/presentation/bloc/article/remote/remote_article_state.dart';
 
@@ -25,7 +23,7 @@ class DailyNews extends StatelessWidget {
         builder: (context, state) {
           if (state is RemoteArticleLoadingState) {
             return Center(
-              child: CircularProgressIndicator(),
+              child: CupertinoActivityIndicator(),
             );
           }
 
@@ -59,5 +57,3 @@ class DailyNews extends StatelessWidget {
     );
   }
 }
-
-
