@@ -9,6 +9,7 @@ import 'features/daily_news/presentation/bloc/article/remote/remote_article_even
 import 'features/daily_news/presentation/pages/home/daily_news.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await initDependencies();
 
   runApp(ScreenUtilInit(

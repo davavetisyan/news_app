@@ -110,3 +110,4 @@ class _NewsApiService implements NewsApiService {
     return Uri.parse(dioBaseUrl).resolveUri(url).toString();
   }
 }
+
